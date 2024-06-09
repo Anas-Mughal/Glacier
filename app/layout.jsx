@@ -3,21 +3,15 @@ import "./globals.css";
 import MainBackground from "./Components/mainbackground"; // Ensure file name matches the import
 import Header from "./Components/Header";
 import FooterContent from "./Components/Footer";
-import Head from "next/head";
-
+import fav from "./assets/svg/LOGO.svg";
 export const metadata = {
   title: "Glacier",
   description: "Finest Drinking Water",
+  icons: fav.src,
 };
-
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="../public/LOGO.ico" />
-      </Head>
       <body className="relative z-[0] bg-body-bg-color">
         <MainBackground />
         <Header />
