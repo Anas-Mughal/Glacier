@@ -1,4 +1,5 @@
-"use client";
+// Form.jsx
+"use client"; // This directive is not standard in JavaScript or React. It seems to be intended for Next.js to run the code on the client side, but it's not necessary unless you're doing something server-side specific.
 import axios from "axios";
 import NameField from "./FormSections/Namefield";
 import NumberField from "./FormSections/Numberfield";
@@ -12,6 +13,7 @@ function Section6() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Collect form data
     const formData = new FormData(event.target);
     const name = formData.get("name");
     const email = formData.get("email");
@@ -19,14 +21,18 @@ function Section6() {
     const bottles = formData.get("bottles");
     const review = formData.get("review");
 
+    // Prepare data for Axios POST request
+    const postData = {
+      name,
+      email,
+      number,
+      bottles,
+      review,
+    };
+
     try {
-      const response = await axios.post("/api/formhandler", {
-        name,
-        email,
-        number,
-        bottles,
-        review,
-      });
+      // Corrected URL to /api/contact-us
+      const response = await axios.post("/api/contact-us", postData);
 
       if (response.status === 200) {
         alert("Message sent successfully!");
@@ -44,7 +50,7 @@ function Section6() {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center w-full gap-[5vw] "
+      className="flex flex-col items-center w-full gap-[5vw]"
     >
       <h1>
         CONTACT <span className="text-primary">US</span>
