@@ -5,7 +5,6 @@ import msg from "../../assets/svg/msg.svg";
 import lock from "../../assets/svg/lock.svg";
 import Image from "next/image";
 import { useState } from "react";
-
 function Section6() {
   const [bottles, setBottles] = useState(0);
 

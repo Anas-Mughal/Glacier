@@ -4,7 +4,10 @@ import Section3 from "./AboutSections/Section3";
 import Map from "./AboutSections/Map";
 import WaterQualityTable from "./AboutSections/WaterQualityTable";
 import Main from "./AboutSections/Main";
-
+export const metadata = {
+  title: "Glacier | ABOUT",
+  description: "Finest Drinking Water",
+};
 function About() {
   return (
     <Main>

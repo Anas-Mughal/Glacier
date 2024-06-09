@@ -9,6 +9,12 @@ import imgUrl1 from "../assets/png/bottle-1.png";
 import imgUrl2 from "../assets/png/p1.png";
 import Section5 from "./HomeSections/Section5";
 import Section6 from "./ContactUs/Form";
+
+export const metadata = {
+  title: "Glacier | HOME",
+  description: "Finest Drinking Water",
+};
+
 function Home() {
   return (
     <Main>
