@@ -9,20 +9,26 @@ import imgUrl1 from "../assets/png/bottle-1.png";
 import imgUrl2 from "../assets/png/p1.png";
 import Section5 from "./HomeSections/Section5";
 import Section6 from "./ContactUs/Form";
+import Head from "next/head";
 function Home() {
   return (
-    <Main>
-      <Section1 flow="" ImgPath={imgUrl1} component={Section1Content} />
-      <Section2 />
-      <Section3 />
-      <Section1
-        flow="flex-row-reverse"
-        ImgPath={imgUrl2}
-        component={Section4Content}
-      />
-      <Section5></Section5>
-      <Section6></Section6>
-    </Main>
+    <>
+      <Head>
+        <title>Glacier | Home  </title>
+      </Head>
+      <Main>
+        <Section1 flow="" ImgPath={imgUrl1} component={Section1Content} />
+        <Section2 />
+        <Section3 />
+        <Section1
+          flow="flex-row-reverse"
+          ImgPath={imgUrl2}
+          component={Section4Content}
+        />
+        <Section5></Section5>
+        <Section6></Section6>
+      </Main>
+    </>
   );
 }
 
