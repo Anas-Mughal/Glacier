@@ -1,0 +1,26 @@
+[
+  {
+    "id":1,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":2,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":3,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
+  }
+]
