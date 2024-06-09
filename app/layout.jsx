@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./globals.css";
-import MainBackground from "./Components/MainBackground"; // Component name should start with a capital letter
+import MainBackground from "./Components/mainbackground"; // Component name should start with a capital letter
 import Header from "./Components/Header";
 import FooterContent from "./Components/Footer";
 

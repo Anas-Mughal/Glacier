@@ -1,5 +1,5 @@
 "use client";
-import products from "../../../data/JSON/productPage.json";
+import products from "../../../data/json/productPage.json";
 import ProductsMaker from "../../Components/ProductsMaker";
 import { useState } from "react";
 function Section2() {
