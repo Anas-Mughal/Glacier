@@ -1,33 +1,37 @@
-// pages/api/submit.js
-import clientPromise from "../../lib/mongodb";
+// pages/api/connect.js
+
+import { MongoClient } from "mongodb";
 
 export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const { name, email, number, bottles, review } = req.body;
+  // if (req.method !== "GET") {
+  //   return res.status(405).json({ message: "Method Not Allowed" });
+  // }
 
-    try {
-      const client = await clientPromise;
-      const db = client.db("your-database-name"); // Replace with your database name
+  const uri = process.env.MONGODB_URI;
 
-      const collection = db.collection("submissions");
-      const result = await collection.insertOne({
-        name,
-        email,
-        number,
-        bottles,
-        review,
-        submittedAt: new Date(),
-      });
+  const client = new MongoClient(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
-      res.status(200).json({ message: "Message sent successfully!", result });
-    } catch (error) {
-      console.error("Error saving to MongoDB:", error);
-      res
-        .status(500)
-        .json({ message: "Failed to save message. Please try again later." });
-    }
-  } else {
-    res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+  try {
+    await client.connect();
+
+    const database = client.db("admin");
+
+    // Send a ping to confirm a successful connection
+    await database.command({ ping: 1 });
+
+    console.log(
+      "Pinged your deployment. You successfully connected to MongoDB!"
+    );
+
+    res.status(200).json({ message: "Connected to MongoDB!" });
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+    res.status(500).json({ message: "Failed to connect to MongoDB" });
+  } finally {
+    // Close the connection
+    await client.close();
   }
 }

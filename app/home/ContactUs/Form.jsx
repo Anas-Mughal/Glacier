@@ -55,6 +55,8 @@ function Section6() {
         className="flex flex-col items-end gap-[1vw]"
         name="contact"
         method="post"
+        netlify="true"
+        data-netlify="true"
       >
         <div className="flex items-center justify-center gap-[1vw] h-[19.271vw]">
           <div className="w-[34.375vw] h-full justify-between flex flex-col">
