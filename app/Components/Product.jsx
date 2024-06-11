@@ -35,13 +35,13 @@ function Product({ imgSrc, description, price, flag, tag }) {
           // objectFit="fit"
         />
       </div>
-      <p className="h-[4vw] flex justify-center items-center text-pretty text-center">
+      <p className="h-[4vw] flex justify-center items-center text-pretty word\ text-center ">
         {description}
       </p>
       <h3>{price} RS</h3>
       <Link
         href="#0"
-        className="relative flex items-center justify-center overflow-hidden rounded-full group before:bg-[#25D366] before:w-full before:h-full before:absolute before:translate-y-full hover:before:translate-y-0 transition-all ease-out duration-[0.3s] before:transition-all before:ease-out before:duration-[0.3s]"
+        className="relative flex items-center justify-center overflow-hidden rounded-full group before:bg-[#25D366] before:w-full before:h-full before:absolute before:translate-y-[200%] hover:before:translate-y-0 transition-all ease-out duration-[0.3s] before:transition-all before:ease-out before:duration-[0.3s]"
       >
         <span className="border-[0.0625vw] w-[9.375vw] h-[2.604vw] flex justify-center items-center gap-[0.75vw] rounded-full group-hover:opacity-0 overflow-hidden transition-all ease-out duration-[0.3s]">
           <span className="size-[1.042vw]">

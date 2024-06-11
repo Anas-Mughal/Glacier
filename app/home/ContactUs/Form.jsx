@@ -13,13 +13,12 @@ function Section6() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Collect form data
-    const formData = new FormData(event.target);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const number = formData.get("number");
-    const bottles = formData.get("bottles");
-    const review = formData.get("review");
+    // Directly extract form values without FormData
+    const name = document.getElementById("name").value; // Assuming you have input elements with IDs
+    const email = document.getElementById("email").value;
+    const number = document.getElementById("number").value;
+    const bottles = document.getElementById("bottles").value;
+    const review = document.getElementById("review").value;
 
     // Prepare data for Axios POST request
     const postData = {
@@ -31,8 +30,8 @@ function Section6() {
     };
 
     try {
-      // Corrected URL to /api/contact-us
-      const response = await axios.post("/api/contact-us", postData);
+      // Send data to the API route
+      const response = await axios.post("/api/submit", postData);
 
       if (response.status === 200) {
         alert("Message sent successfully!");

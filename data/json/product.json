@@ -2,7 +2,7 @@
   {
     "id":1,
     "imgSrc": "/src/Product_assets/product.png",
-    "description": "Product 1 Description",
+    "description": "Product 1 Description Product 1 Description Product 1 Description Product 1 Description  dasda dsada",
     "price": 19.99,
     "flag": true,
     "tag": "deals"
