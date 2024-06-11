@@ -1,5 +1,5 @@
 // Form.jsx
-"use client"; // This directive is not standard in JavaScript or React. It seems to be intended for Next.js to run the code on the client side, but it's not necessary unless you're doing something server-side specific.
+"use client";
 import axios from "axios";
 import NameField from "./FormSections/Namefield";
 import NumberField from "./FormSections/Numberfield";
@@ -9,18 +9,15 @@ import ReviewField from "./FormSections/Reviewfield";
 import SubmitBtn from "./FormSections/Submitbtn";
 
 function Section6() {
-  // Section6 component
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Directly extract form values without FormData
-    const name = document.getElementById("name").value; // Assuming you have input elements with IDs
+    const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const number = document.getElementById("number").value;
     const bottles = document.getElementById("bottles").value;
     const review = document.getElementById("review").value;
 
-    // Prepare data for Axios POST request
     const postData = {
       name,
       email,
@@ -30,7 +27,6 @@ function Section6() {
     };
 
     try {
-      // Send data to the API route
       const response = await axios.post("/api/submit", postData);
 
       if (response.status === 200) {
