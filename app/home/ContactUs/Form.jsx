@@ -51,7 +51,7 @@ function Section6() {
         CONTACT <span className="text-primary">US</span>
       </h1>
       <form
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
         className="flex flex-col items-end gap-[1vw]"
         netlify
       >
