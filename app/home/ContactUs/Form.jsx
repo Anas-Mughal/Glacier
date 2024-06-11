@@ -53,7 +53,8 @@ function Section6() {
       <form
         // onSubmit={handleSubmit}
         className="flex flex-col items-end gap-[1vw]"
-        netlify
+        name="contact"
+        method="post"
       >
         <div className="flex items-center justify-center gap-[1vw] h-[19.271vw]">
           <div className="w-[34.375vw] h-full justify-between flex flex-col">
