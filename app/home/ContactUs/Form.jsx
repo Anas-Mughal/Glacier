@@ -9,38 +9,38 @@ import ReviewField from "./FormSections/Reviewfield";
 import SubmitBtn from "./FormSections/Submitbtn";
 
 function Section6() {
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-  //   const name = document.getElementById("name").value;
-  //   const email = document.getElementById("email").value;
-  //   const number = document.getElementById("number").value;
-  //   const bottles = document.getElementById("bottles").value;
-  //   const review = document.getElementById("review").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const number = document.getElementById("number").value;
+    const bottles = document.getElementById("bottles").value;
+    const review = document.getElementById("review").value;
 
-  //   const postData = {
-  //     name,
-  //     email,
-  //     number,
-  //     bottles,
-  //     review,
-  //   };
+    const postData = {
+      name,
+      email,
+      number,
+      bottles,
+      review,
+    };
 
-  //   try {
-  //     const response = await axios.post("/api/submit", postData);
+    try {
+      const response = await axios.post("/api/submit", postData);
 
-  //     if (response.status === 200) {
-  //       alert("Message sent successfully!");
-  //     } else {
-  //       throw new Error(
-  //         `Failed to send message: ${response.status} ${response.statusText}`
-  //       );
-  //     }
-  //   } catch (error) {
-  //     console.error("Error sending message:", error);
-  //     alert("Failed to send message. Please try again later.");
-  //   }
-  // };
+      if (response.status === 200) {
+        alert("Message sent successfully!");
+      } else {
+        throw new Error(
+          `Failed to send message: ${response.status} ${response.statusText}`
+        );
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Failed to send message. Please try again later.");
+    }
+  };
 
   return (
     <section
@@ -51,12 +51,9 @@ function Section6() {
         CONTACT <span className="text-primary">US</span>
       </h1>
       <form
-        // onSubmit={handleSubmit}
+        onSubmit={handleSubmit}
         className="flex flex-col items-end gap-[1vw]"
         name="contact"
-        method="post"
-        netlify="true"
-        data-netlify="true"
       >
         <div className="flex items-center justify-center gap-[1vw] h-[19.271vw]">
           <div className="w-[34.375vw] h-full justify-between flex flex-col">

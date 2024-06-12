@@ -13,12 +13,6 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="relative z-[0] bg-body-bg-color">
-        <form name="contact" netlify="true" data-netlify="true" netlify-honeypot="bot-field" hidden>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
-        </form>
-
         <MainBackground />
         <Header />
         {children}
