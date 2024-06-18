@@ -16,21 +16,21 @@ function Section2() {
           <div className="flex flex-col items-center justify-center gap-[2vw] w-[42.292vw]">
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img3}
                 alt=""
               ></Image>
             </div>
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img4}
                 alt=""
               ></Image>
             </div>
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img5}
                 alt=""
               ></Image>
@@ -39,21 +39,21 @@ function Section2() {
           <div className="flex flex-col items-center justify-between gap-[3.65vw] w-[24.531vw]">
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img6}
                 alt=""
               ></Image>
             </div>
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img7}
                 alt=""
               ></Image>
             </div>
             <div className="w-full">
               <Image
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto "
                 src={img8}
                 alt=""
               ></Image>

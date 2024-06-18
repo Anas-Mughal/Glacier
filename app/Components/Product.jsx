@@ -26,12 +26,11 @@ function Product({ imgSrc, description, price, flag, tag }) {
       </div>
       <div className="w-full h-[15vw] flex justify-center items-center">
         <Image
-          className="flex items-center justify-center object-contain h-full"
+          className="flex items-center justify-center object-contain size-full"
           src={imgSrc}
           alt=""
           width={680}
           height={680}
-          sizes="15vw"
           // objectFit="fit"
         />
       </div>

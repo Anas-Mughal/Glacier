@@ -13,6 +13,7 @@ const FooterContent = () => (
       src={footerBg}
       className="w-[100%] absolute inset-0 -z-10"
       alt="Background"
+      priority
     />
     <div className="flex flex-col items-center justify-center w-full m-auto gap-[3.5vw] mt-[9.2vw]">
       <div className="flex gap-[29.583vw] ">

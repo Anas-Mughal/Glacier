@@ -4,8 +4,15 @@ function Section1({ flow, ImgPath, component: Section1Content }) {
   return (
     <section className={`flex items-center w-full  justify-evenly ${flow}`}>
       <Section1Content />
-      <div>
-        <Image src={ImgPath} alt="" className="size-auto" priority />
+      <div className="flex items-center justify-center size-[26.042vw]">
+        <Image
+          src={ImgPath}
+          alt=""
+          className="flex items-center justify-center object-contain size-full"
+          width={500}
+          height={500}
+          priority
+        />
       </div>
     </section>
   );
