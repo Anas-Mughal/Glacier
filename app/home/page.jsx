@@ -18,7 +18,12 @@ export const metadata = {
 function Home() {
   return (
     <Main>
-      <Section1 flow="" ImgPath={imgUrl1} component={Section1Content} />
+      <Section1
+        flow=""
+        ImgPath={imgUrl1}
+        component={Section1Content}
+        extraProperties="max-[950px]:hidden"
+      />
       <Section2 />
       <Section3 />
       <Section1
