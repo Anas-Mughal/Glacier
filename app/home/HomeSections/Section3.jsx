@@ -6,14 +6,15 @@ function Section3() {
   return (
     <section className="flex flex-col items-center w-full  gap-[2.5vw]">
       <div>
-        <h2>
+        <h2 className="max-[950px]:text-[6vw] max-[950px]:flex max-[950px]:justify-center max-[950px]:items-center max-[950px]:gap-[3vw]">
           CHOOSE YOUR <span className="text-primary">WATER</span>
         </h2>
-        <p className="text-[0.833vw] text-center">Bottles We Deliver</p>
+        <p className="text-[0.833vw] text-center max-[950px]:text-[2.5vw]">Bottles We Deliver</p>
       </div>
       <ProductsMaker
         products={products}
         styles={"flex items-center justify-center w-full gap-[3vw]"}
+        
       ></ProductsMaker>{" "}
       {/* Pass products as props */}
       <Link
