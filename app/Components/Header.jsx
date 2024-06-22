@@ -1,8 +1,9 @@
-'use client'
+"use client";
 import { useEffect } from "react";
 import LinksBtn1 from "./LinksBtn1";
 import LogoImg from "./LogoImg";
 import ShopBtn from "./ShopBtn";
+import Hamburger from "./hamburger";
 
 function Header() {
   const links = [
@@ -10,7 +11,7 @@ function Header() {
     { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/#contact" },
   ];
-
+  
   useEffect(() => {
     const headerElement = document.querySelector("#header-container");
     const handleScroll = () => {
@@ -24,26 +25,29 @@ function Header() {
   }, []);
 
   return (
-    <div
-      id="header-container"
-      className="z-50 w-full h-header absolute inset-0 py-[0.25vw]"
-    >
-      <header className="flex items-center justify-between h-full m-auto w-desktop">
-        <LogoImg linkPath={links[0].path} />
-        <nav className="flex items-center justify-center h-full">
-          <ul className="flex items-center justify-between gap-[3vw] w-full h-full">
-            {links.map((link) => (
-              <LinksBtn1
-                key={link.name}
-                linkName={link.name}
-                linkPath={link.path}
-              />
-            ))}
-          </ul>
-        </nav>
-        <ShopBtn linkPath="/shop" />
-      </header>
-    </div>
+    <>
+      <div
+        id="header-container"
+        className="absolute z-50 flex items-center justify-center w-full"
+      >
+        <header className="flex items-center justify-evenly gap-[20vw]  w-full my-[1.5vw]">
+          <Hamburger></Hamburger>
+          <LogoImg linkPath={links[0].path} />
+          <nav className="flex items-center justify-center  max-[950px]:hidden">
+            <ul className="flex items-center justify-between gap-[3vw] w-full ">
+              {links.map((link) => (
+                <LinksBtn1
+                  key={link.name}
+                  linkName={link.name}
+                  linkPath={link.path}
+                />
+              ))}
+            </ul>
+          </nav>
+          <ShopBtn linkPath="/shop" />
+        </header>
+      </div>
+    </>
   );
 }
 

@@ -15,6 +15,7 @@ function mainbackground() {
         alt=""
         width="1920"
         height="1080"
+        priority={true}
       ></Image>
       <Image
         className="w-full absolute top-[25vw] left-[-50vw] rotate-[-150deg] z-[1]"
@@ -22,6 +23,7 @@ function mainbackground() {
         alt=""
         width="1920"
         height="1080"
+        priority={true}
       ></Image>
       <Image
         className="w-full absolute top-[100vw] right-[-45vw] z-[1] rotate-[0deg]"
@@ -29,6 +31,7 @@ function mainbackground() {
         alt=""
         width="1920"
         height="1080"
+        priority={true}
       ></Image>
       <Image
         className="w-full absolute top-[200vw] left-[-50vw] z-[1]"

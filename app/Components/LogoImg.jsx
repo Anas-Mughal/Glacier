@@ -5,8 +5,8 @@ import Link from "next/link";
 
 function LogoImg({ linkPath }) {
   return (
-    <Link href={linkPath} className="h-full">
-      <Image src={Logo} alt="Logo" className="h-full w-[6.155vw]"></Image>
+    <Link href={linkPath} className="h-full w-[7vw] max-[950px]:w-[20vw] z-[50]">
+      <Image src={Logo} alt="Logo" className="size-full"></Image>
     </Link>
   );
 }

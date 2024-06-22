@@ -5,7 +5,7 @@ function LinksBtn1({ linkName, linkPath }) {
     <li className="flex items-center justify-center">
       <Link
         href={linkPath}
-        className="relative text-header-text text-white font-semibold before:w-0 before:bottom-[-20%] before:absolute before:bg-gradient-to-r from-transparent to-teal-500 before:h-[10%] hover:before:w-full before:transition-all transition-all hover:text-primary"
+        className="relative text-header-text text-white font-semibold before:w-0 before:bottom-[-20%] before:absolute before:bg-gradient-to-r from-transparent to-teal-500 before:h-[10%] hover:before:w-full before:transition-all transition-all hover:text-primary max-[950px]:text-[10vw]"
       >
         {linkName}
       </Link>
