@@ -22,5 +22,125 @@
     "price": 29.99,
     "flag": true,
     "tag": "deals"
+  },
+  {
+    "id":4,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":5,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":6,
+    "imgSrc": "/src/Product_assets/filter.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":7,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":8,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":9,
+    "imgSrc": "/src/Product_assets/filter.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":10,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":11,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":12,
+    "imgSrc": "/src/Product_assets/filter.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":13,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":14,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":15,
+    "imgSrc": "/src/Product_assets/filter.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":16,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 1 Description",
+    "price": 19.99,
+    "flag": true,
+    "tag": "deals"
+  },
+  {
+    "id":17,
+    "imgSrc": "/src/Product_assets/product.png",
+    "description": "Product 2 Description",
+    "price": 24.99,
+    "flag": false,
+    "tag": "bottles"
+  },
+  {
+    "id":18,
+    "imgSrc": "/src/Product_assets/filter.png",
+    "description": "Product 3 Description",
+    "price": 29.99,
+    "flag": true,
+    "tag": "deals"
   }
 ]

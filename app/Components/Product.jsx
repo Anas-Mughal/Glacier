@@ -22,7 +22,7 @@ function Product({ imgSrc, description, price, flag, tag }) {
       <div
         className={`absolute size-[3.125vw] right-[-3.5%] top-[-3.5%] ${saleBadgeVisibility}`}
       >
-        <Image src={saleSvg} alt="Sale" className="size-full" />
+        <Image src={saleSvg} alt="Sale" className="size-full" priority />
       </div>
       <div className="w-full h-[15vw] flex justify-center items-center">
         <Image

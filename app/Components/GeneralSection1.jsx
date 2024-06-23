@@ -40,7 +40,7 @@ function Section1({
       <Section1Content />
       {/* Conditional rendering based on media query */}
       {!matches && (
-        <div className={`flex items-center justify-center size-[26.042vw] `}>
+        <div className={`flex items-center justify-center size-[26.042vw] ${extraProperties}`}>
           <Image
             src={ImgPath}
             alt=""
