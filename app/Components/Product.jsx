@@ -15,7 +15,7 @@ function Product({ imgSrc, description, price, flag, tag }) {
   const saleBadgeVisibility = flag ? "hidden" : "";
   return (
     <div
-      className="w-[18.228vw] h-[26.628vw] max-[950px]:w-[50%] bg-[#ffffff1c] backdrop-blur-lg rounded-[0.75vw] p-[0.5vw] flex flex-col items-center justify-between relative"
+      className="w-[18.228vw] gap-[1vw] max-[950px]:scale-[2] max-[950px]:p-[1vw] bg-[#ffffff1c] backdrop-blur-lg rounded-[0.75vw] p-[0.5vw] flex flex-col items-center justify-between relative"
       data-set={tag}
       id="product"
     >

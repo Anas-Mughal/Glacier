@@ -19,20 +19,22 @@ function Home() {
   return (
     <Main>
       <Section1
-        flow=""
+        flow="h-dvh"
         ImgPath={imgUrl1}
         component={Section1Content}
         extraProperties="max-[950px]:hidden"
       />
-      <Section2 />
-      <Section3 />
-      <Section1
-        flow="flex-row-reverse"
-        ImgPath={imgUrl2}
-        component={Section4Content}
-      />
-      <Section5></Section5>
-      <Section6></Section6>
+      <div className="flex flex-col justify-center my-[12.5vw] gap-[15vw] max-[950px]:gap-[41.143vw] ">
+        <Section2 />
+        <Section3 />
+        <Section1
+          flow="flex-row-reverse"
+          ImgPath={imgUrl2}
+          component={Section4Content}
+        />
+        <Section5></Section5>
+        <Section6></Section6>
+      </div>
     </Main>
   );
 }

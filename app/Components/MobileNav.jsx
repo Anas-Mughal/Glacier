@@ -30,7 +30,7 @@ function MobileNav({ flag, setIsChecked }) {
   return (
     <div
       className={`fixed inset-0 flex items-center justify-center w-full transition-all duration-300 bg-[rgba(55,203,226,0.5)] backdrop-blur-2xl  ${
-        flag ? "h-screen" : "h-0"
+        flag ? "h-dvh" : "h-0"
       }`}
     >
       <nav

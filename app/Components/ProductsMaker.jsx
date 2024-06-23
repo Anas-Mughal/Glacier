@@ -5,7 +5,7 @@ function ProductsMaker({ styles, products }) {
   return (
     <ul className={styles}>
       {products.map((productData) => (
-        <li key={productData.id}>
+        <li key={productData.id} className="max-[950px]:w-[36.458vw] max-[950px]:h-[56.25vw] max-[950px]:flex max-[950px]:justify-center max-[950px]:items-center">
           <Product {...productData} />
         </li>
       ))}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 function Section1() {
   return (
-    <div className="flex flex-col justify-center  max-[950px]:items-center  max-[950px]:scale-[2.45] max-[950px]:my-[40vw] max-[950px]:mt-[50vw]">
+    <div className="flex flex-col justify-center  max-[950px]:items-center  max-[950px]:scale-[2.45] ">
       <h1 className="leading-[3.75vw]">PURE WATER </h1>
       <h1 className="leading-[3.75vw] text-primary">DELIVERY SERVICE</h1>
       <p className="w-[28.646vw] mt-[1vw]  first-letter:text-primary first-letter:font-bold  max-[950px]:text-center ">
