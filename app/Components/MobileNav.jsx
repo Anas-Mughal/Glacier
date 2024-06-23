@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import LinksBtn1 from "./LinksBtn1";
@@ -14,18 +15,17 @@ function MobileNav({ flag, setIsChecked }) {
   };
 
   useEffect(() => {
-  const toggleScrollLock = () => {
-    document.body.classList.toggle("scroll-lock", flag);
-  };
+    const toggleScrollLock = () => {
+      document.body.classList.toggle("scroll-lock", flag);
+    };
 
-  toggleScrollLock(); // Initial setup
+    toggleScrollLock(); // Initial setup
 
-  // Cleanup function to remove the class when component unmounts or flag changes
-  return () => {
-    toggleScrollLock(); // Cleanup: remove the class
-  };
-}, [flag]);
-
+    // Cleanup function to remove the class when component unmounts or flag changes
+    return () => {
+      toggleScrollLock(); // Cleanup: remove the class
+    };
+  }, [flag]);
 
   return (
     <div
