@@ -23,7 +23,7 @@ function mainbackground() {
         alt=""
         width="1920"
         height="1080"
-        priority={true}
+        priority={true} // Prioritize loading
       ></Image>
       <Image
         className="w-full absolute top-[100vw] right-[-45vw] z-[1] max-[950px]:scale-[1.75] max-[950px]:top-[275vw] "

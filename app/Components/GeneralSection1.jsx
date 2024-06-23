@@ -1,26 +1,56 @@
+"use client";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import { useEffect, useState } from "react"; // Import useState and useEffect from React
+
 function Section1({
   flow,
   ImgPath,
   component: Section1Content,
   extraProperties,
 }) {
+  const [matches, setMatches] = useState(false);
+
+  // Use useEffect to check media query on component mount
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 950px)"); // Define your media query here
+    console.log("mediaQuery: ", mediaQuery);
+    // Check initial matches
+    setMatches(mediaQuery.matches);
+    console.log("mediaQuery.matches: ", mediaQuery.matches);
+
+    // Add listener for media query changes
+    const handleChange = (e) => {
+      setMatches(e.matches);
+      console.log("setMatches(e.matches): ", e.matches);
+    };
+
+    // Use addEventListener instead of addListener
+    mediaQuery.addEventListener("change", handleChange);
+
+    // Clean up listener
+    return () => {
+      // RemoveEventListener instead of removeListener
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+
   return (
-    <section className={`flex items-center w-full  justify-evenly ${flow} `}>
+    <section className={`flex items-center w-full justify-evenly ${flow}`}>
       <Section1Content />
-      <div
-        className={`flex items-center justify-center size-[26.042vw] ${extraProperties}`}
-      >
-        <Image
-          src={ImgPath}
-          alt=""
-          className={`flex items-center justify-center object-contain size-full `}
-          width={500}
-          height={500}
-          priority
-        />
-      </div>
+      {/* Conditional rendering based on media query */}
+      {!matches && (
+        <div className={`flex items-center justify-center size-[26.042vw] `}>
+          <Image
+            src={ImgPath}
+            alt=""
+            className={`flex items-center justify-center object-contain size-full`}
+            width={500}
+            height={500}
+            priority
+          />
+        </div>
+      )}
     </section>
   );
 }
@@ -28,9 +58,9 @@ function Section1({
 // PropTypes validation
 Section1.propTypes = {
   extraProperties: PropTypes.string.isRequired,
-  flow: PropTypes.string.isRequired, // Validate flow as a required string
-  ImgPath: PropTypes.string.isRequired, // Validate ImgPath as a required string
-  component: PropTypes.elementType.isRequired, // Validate component as a required element type (component)
+  flow: PropTypes.string.isRequired,
+  ImgPath: PropTypes.string.isRequired,
+  component: PropTypes.elementType.isRequired,
 };
 
 export default Section1;

@@ -1,3 +1,4 @@
+"use client"
 import imgUrl1 from "../../../public/assets/svg/free-delivery.svg";
 import imgUrl2 from "../../../public/assets/svg/calender.svg";
 import imgUrl3 from "../../../public/assets/svg/clock.svg";
