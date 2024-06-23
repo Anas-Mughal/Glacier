@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img2 from "../../assets/png/about/filter.png";
+import img2 from "../../../public/assets/png/about/filter.png";
 
 function Section2() {
   return (

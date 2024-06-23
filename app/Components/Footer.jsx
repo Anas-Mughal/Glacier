@@ -1,8 +1,8 @@
 import Image from "next/image";
-import footerBg from "../assets/svg/footer.svg";
-import link1 from "../assets/svg/Link1.svg";
-import link2 from "../assets/svg/Link2.svg";
-import link3 from "../assets/svg/Link3.svg";
+import footerBg from "../../public/assets/svg/footer.svg";
+import link1 from "../../public/assets/svg/Link1.svg";
+import link2 from "../../public/assets/svg/Link2.svg";
+import link3 from "../../public/assets/svg/Link3.svg";
 import Link from "next/link";
 const FooterContent = () => (
   <footer

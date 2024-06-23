@@ -18,27 +18,31 @@ function Section2() {
         );
 
   return (
-    <section className="flex w-full gap-[1.563vw] mb-[20vw]">
-      <div className="w-[12.24vw] h-[13.021vw] bg-[#ffffff1c] backdrop-blur-lg rounded-[0.5vw] p-[1.25vw] flex flex-col justify-center gap-[0.5vw]">
-        <p className="first-letter:text-primary first-letter:font-bold">
+    <section className="flex w-full gap-[1.563vw] max-[950px]:flex-col items-start">
+      <div className="  bg-[#ffffff1c] backdrop-blur-lg rounded-[0.5vw] max-[950px]:rounded-[2vw] p-[1.25vw] max-[950px]:p-[3.25vw] items-start flex flex-col max-[950px]:gap-[5vw] justify-center gap-[1.25vw] max-[950px]:w-full">
+        <p className=" first-letter:text-primary first-letter:font-bold max-[950px]:text-[4vw]">
           | Categories
         </p>
         <ul
           id="choice"
-          className="flex flex-col justify-center gap-[0.5vw] pl-[.5vw] h-full"
+          className="flex flex-col justify-evenly gap-[0.5vw] pl-[.5vw] w-full  max-[950px]:flex-row "
         >
           {categories.map((category) => (
-            <li key={category} data-filter={category.toLowerCase()} className="">
+            <li
+              key={category}
+              data-filter={category.toLowerCase()}
+              className="flex items-center justify-start"
+            >
               <button
                 className="focus:outline-none"
                 onClick={() => handleCategoryChange(category)}
               >
                 <p
-                  className={`font-light cursor-pointer ${
+                  className={`font-light max-[950px]:font-medium cursor-pointer ${
                     selectedCategory === category
                       ? "text-primary font-bold"
                       : ""
-                  }`}
+                  }  max-[950px]:text-[4vw]`}
                 >
                   {category}
                 </p>
@@ -49,7 +53,7 @@ function Section2() {
       </div>
       <ProductsMaker
         products={filteredProducts}
-        styles="grid grid-cols-3 gap-[1.563vw]"
+        styles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw]"
       />
     </section>
   );

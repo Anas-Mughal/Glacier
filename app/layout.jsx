@@ -3,7 +3,7 @@ import "./globals.css";
 import MainBackground from "./Components/mainbackground"; // Ensure file name matches the import
 import Header from "./Components/Header";
 import FooterContent from "./Components/Footer";
-import fav from "./assets/svg/LOGO.svg";
+import fav from "../public/assets/svg/LOGO.svg";
 export const metadata = {
   title: "Glacier",
   description: "Finest Drinking Water",

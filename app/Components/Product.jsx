@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import saleSvg from "../assets/svg/sale.svg";
-import cartSvg from "../assets/svg/cart.svg";
-import WhatsAppSvg from "../assets/svg/whatsapp.svg";
+import saleSvg from "../../public/assets/svg/sale.svg";
+import cartSvg from "../../public/assets/svg/cart.svg";
+import WhatsAppSvg from "../../public/assets/svg/whatsapp.svg";
 import Link from "next/link";
 import Image from "next/image";
 Product.propTypes = {

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import RightArrow from "../assets/svg/right-arrow.svg";
+import RightArrow from "../../public/assets/svg/right-arrow.svg";
 import Link from "next/link";
 import Image from "next/image";
 

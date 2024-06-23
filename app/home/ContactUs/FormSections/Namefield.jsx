@@ -1,5 +1,5 @@
 import Image from "next/image";
-import personIcon from "../../../assets/svg/personIcon.svg";
+import personIcon from "../../../../public/assets/svg/personIcon.svg";
 
 function NameField() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import msg from "../../../assets/svg/msg.svg";
+import msg from "../../../../public/assets/svg/msg.svg";
 
 function EmailField() {
   return (

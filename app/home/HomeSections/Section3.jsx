@@ -1,22 +1,40 @@
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import products from "../../../data/json/product.json";
 import ProductsMaker from "../../Components/ProductsMaker";
 
 function Section3() {
+  const [displayedProducts, setDisplayedProducts] = useState(products);
+
+  useEffect(() => {
+    const updateDisplayedProducts = () => {
+      setDisplayedProducts(
+        products.length === 4 && window.innerWidth >= 950
+          ? products.slice(0, 3)
+          : products
+      );
+    };
+
+    updateDisplayedProducts();
+  }, []);
+
   return (
-    <section className="flex flex-col items-center w-full  gap-[2.5vw] max-[950px]:gap-[6.25vw]">
+    <section className="flex flex-col items-center w-full gap-[2.5vw] max-[950px]:gap-[6.25vw]">
       <div>
         <h2 className="max-[950px]:text-[6vw] max-[950px]:flex max-[950px]:justify-center max-[950px]:items-center max-[950px]:gap-[3vw]">
           CHOOSE YOUR <span className="text-primary">WATER</span>
         </h2>
-        <p className="text-[0.833vw] text-center max-[950px]:text-[2.5vw]">Bottles We Deliver</p>
+        <p className="text-[0.833vw] text-center max-[950px]:text-[2.5vw]">
+          Bottles We Deliver
+        </p>
       </div>
       <ProductsMaker
-        products={products}
-        styles={"flex items-center justify-center w-full gap-[3vw] max-[950px]:grid max-[950px]:grid-cols-2 max-[950px]:justify-items-center	"}
-        
-      ></ProductsMaker>{" "}
-      {/* Pass products as props */}
+        products={displayedProducts}
+        styles={
+          "flex items-center justify-center w-full gap-[3vw] max-[950px]:grid max-[950px]:grid-cols-2 max-[950px]:justify-items-center"
+        }
+      />
       <Link
         href="/shop"
         className="group relative w-[9.375vw] h-[2.604vw] max-[950px]:w-[23.438vw] max-[950px]:h-[6vw] flex items-center justify-center text-white rounded-full"

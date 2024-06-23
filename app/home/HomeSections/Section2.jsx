@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ImgUrl from "../../assets/png/bottle-2.png";
+import ImgUrl from "../../../public/assets/png/bottle-2.png";
 function Section2() {
   return (
     <section className="flex flex-col items-center w-full gap-[5vw] max-[950px]:gap-[10vw]">

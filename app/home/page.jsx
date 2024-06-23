@@ -5,8 +5,8 @@ import Section4Content from "./HomeSections/Section4";
 import Section1 from "../Components/GeneralSection1";
 import Section2 from "./HomeSections/Section2";
 import Section3 from "./HomeSections/Section3";
-import imgUrl1 from "../assets/png/bottle-1.png";
-import imgUrl2 from "../assets/png/p1.png";
+import imgUrl1 from "../../public/assets/png/bottle-1.png";
+import imgUrl2 from "../../public/assets/png/p1.png";
 import Section5 from "./HomeSections/Section5";
 import Section6 from "./ContactUs/Form";
 

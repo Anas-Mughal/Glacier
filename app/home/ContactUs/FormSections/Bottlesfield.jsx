@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import lock from "../../../assets/svg/lock.svg";
+import lock from "../../../../public/assets/svg/lock.svg";
 import { useState } from "react";
 
 function BottlesField() {

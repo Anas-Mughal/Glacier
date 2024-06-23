@@ -61,7 +61,7 @@ p {
 
 .Stickyheader {
   background-color: #37cae280;
-  
+
   position: fixed !important;
   top: 0;
   /* Ensure the header sticks to the top */
@@ -127,9 +127,6 @@ p {
 @media (max-width: 950px) {
   .hamburger {
     display: flex;
-  }
-  h2{
-    /* font-size: 3.5vw; */
   }
 }
 

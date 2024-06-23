@@ -1,5 +1,5 @@
 import Image from "next/image";
-import telephone from "../../../assets/svg/telephone.svg";
+import telephone from "../../../../public/assets/svg/telephone.svg";
 
 function NumberField() {
   return (

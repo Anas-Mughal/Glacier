@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img1 from "../../assets/png/about/aboutUs.png";
+import img1 from "../../../public/assets/png/about/aboutUs.png";
 
 function Section3() {
   return (

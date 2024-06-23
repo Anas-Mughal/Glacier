@@ -1,10 +1,10 @@
 import Image from "next/image";
-import img3 from "../../assets/png/about/1.png";
-import img4 from "../../assets/png/about/2.png";
-import img5 from "../../assets/png/about/3.png";
-import img6 from "../../assets/png/about/4.png";
-import img7 from "../../assets/png/about/5.png";
-import img8 from "../../assets/png/about/6.png";
+import img3 from "../../../public/assets/png/about/1.png";
+import img4 from "../../../public/assets/png/about/2.png";
+import img5 from "../../../public/assets/png/about/3.png";
+import img6 from "../../../public/assets/png/about/4.png";
+import img7 from "../../../public/assets/png/about/5.png";
+import img8 from "../../../public/assets/png/about/6.png";
 function Section2() {
   return (
     <section className="flex items-center justify-center  flex-col gap-[2vw] ">
