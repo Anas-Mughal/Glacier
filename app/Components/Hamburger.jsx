@@ -12,7 +12,7 @@ function Hamburger() {
   useEffect(() => {
     const headerElement = document.querySelector("#header-container");
     if (headerElement) {
-      if (isChecked ) {
+      if (isChecked) {
         headerElement.classList.remove("backdrop-blur-xl");
       } else {
         headerElement.classList.add("backdrop-blur-xl");

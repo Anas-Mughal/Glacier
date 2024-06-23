@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import LinksBtn1 from "./LinksBtn1";
 import LogoImg from "./LogoImg";
 import ShopBtn from "./ShopBtn";
-import Hamburger from "./hamburger";
+import Hamburger from "./Hamburger";
 
 function Header() {
   const links = [
