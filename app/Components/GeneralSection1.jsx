@@ -14,15 +14,12 @@ function Section1({
   // Use useEffect to check media query on component mount
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 950px)"); // Define your media query here
-    console.log("mediaQuery: ", mediaQuery);
     // Check initial matches
     setMatches(mediaQuery.matches);
-    console.log("mediaQuery.matches: ", mediaQuery.matches);
 
     // Add listener for media query changes
     const handleChange = (e) => {
       setMatches(e.matches);
-      console.log("setMatches(e.matches): ", e.matches);
     };
 
     // Use addEventListener instead of addListener
@@ -36,11 +33,13 @@ function Section1({
   }, []);
 
   return (
-    <section className={`flex items-center w-full justify-evenly ${flow}`}>
+    <section className={`flex items-center w-full justify-center  ${flow}`}>
       <Section1Content />
       {/* Conditional rendering based on media query */}
       {!matches && (
-        <div className={`flex items-center justify-center size-[26.042vw] ${extraProperties}`}>
+        <div
+          className={`flex items-center justify-center ${extraProperties} `}
+        >
           <Image
             src={ImgPath}
             alt=""

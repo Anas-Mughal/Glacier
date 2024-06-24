@@ -22,7 +22,7 @@ function Home() {
         flow="h-dvh"
         ImgPath={imgUrl1}
         component={Section1Content}
-        extraProperties="max-[950px]:hidden"
+        extraProperties="max-[950px]:hidden size-[100%]"
       />
       <div className="flex flex-col justify-center my-[12.5vw] gap-[15vw] max-[950px]:gap-[41.143vw] ">
         <Section2 />

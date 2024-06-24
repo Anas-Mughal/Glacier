@@ -42,21 +42,72 @@ h6 {
   color: #ffffff;
 }
 
+/* Responsive CSS for hierarchical font sizes using vw units */
 h1 {
-  font-size: 3.646vw;
+  font-size: 5vw;
+  /* Approximately 96px on a 960px wide viewport */
 }
 
 h2 {
-  font-size: 2.857vw;
+  font-size: 3.75vw;
+  /* Approximately 72px on a 960px wide viewport */
 }
 
 h3 {
-  font-size: 1.042vw;
+  font-size: 2.813vw;
+  /* Approximately 54px on a 960px wide viewport */
+}
+
+h4 {
+  font-size: 2.135vw;
+  /* Approximately 41px on a 960px wide viewport */
+}
+
+h5 {
+  font-size: 1.615vw;
+  /* Approximately 31px on a 960px wide viewport */
+}
+
+h6 {
+  font-size: 1.354vw;
+  /* Approximately 24px on a 960px wide viewport */
 }
 
 p {
-  font-size: 1.042vw;
+  font-size: 1.25vw;
+  /* Approximately 24px on a 960px wide viewport */
   color: white;
+}
+
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 10vw;
+  }
+
+  h2 {
+    font-size: 7.5vw;
+  }
+
+  h3 {
+    font-size: 5.625vw;
+  }
+
+  h4 {
+    font-size: 4.271vw;
+  }
+
+  h5 {
+    font-size: 3.229vw;
+  }
+
+  h6 {
+    font-size: 2.708vw;
+  }
+
+  p {
+    font-size: 2.5vw;
+  }
 }
 
 .Stickyheader {

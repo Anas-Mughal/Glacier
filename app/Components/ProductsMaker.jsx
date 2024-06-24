@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import Product from "./Product";
 
-function ProductsMaker({ styles, products }) {
+function ProductsMaker({ ulstyles, products, listyles }) {
   return (
-    <ul className={styles}>
+    <ul className={ulstyles}>
       {products.map((productData) => (
-        <li key={productData.id} className="max-[950px]:w-[36.458vw] max-[950px]:h-[56.25vw] max-[950px]:flex max-[950px]:justify-center max-[950px]:items-center">
+        <li key={productData.id} className={listyles}>
           <Product {...productData} />
         </li>
       ))}
@@ -14,7 +14,8 @@ function ProductsMaker({ styles, products }) {
 }
 
 ProductsMaker.propTypes = {
-  styles: PropTypes.string.isRequired,
+  listyles: PropTypes.string,
+  ulstyles: PropTypes.string.isRequired,
   products: PropTypes.arrayOf(
     PropTypes.shape({
       imgSrc: PropTypes.string.isRequired,

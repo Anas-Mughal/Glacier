@@ -53,7 +53,8 @@ function Section2() {
       </div>
       <ProductsMaker
         products={filteredProducts}
-        styles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw]"
+        ulstyles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw] max-[950px]:gap-[4vw]"
+        listyles={""}
       />
     </section>
   );
