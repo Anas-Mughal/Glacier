@@ -33,7 +33,7 @@ function Section1({
   }, []);
 
   return (
-    <section className={`flex items-center w-full justify-center  ${flow}`}>
+    <section className={`flex items-center  justify-center  ${flow}`}>
       <Section1Content />
       {/* Conditional rendering based on media query */}
       {!matches && (

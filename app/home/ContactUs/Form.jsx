@@ -52,17 +52,19 @@ function Section6() {
       </h1>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-end gap-[1vw]"
+        className="flex flex-col items-end gap-[1vw] w-full"
         name="contact"
       >
-        <div className="flex items-center justify-center gap-[1vw] h-[19.271vw]">
-          <div className="w-[34.375vw] h-full justify-between flex flex-col">
+        <div className="flex items-center justify-center gap-[1vw] h-[19.271vw] max-[950px]:flex-col max-[950px]:h-full w-full">
+          <div className="w-[34.375vw] max-[950px]:w-full h-full justify-between flex flex-col gap-[7.5%]">
             <NameField />
             <NumberField />
             <EmailField />
             <BottlesField />
           </div>
-          <ReviewField />
+          <div className="h-full">
+            <ReviewField />
+          </div>
         </div>
         <div>
           <SubmitBtn />

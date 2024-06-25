@@ -9,14 +9,14 @@ function NameField() {
         htmlFor="name"
       >
         <Image
-          className="w-[0.708vw] h-[0.885vw]"
+          className="object-contain size-full "
           src={personIcon}
           alt="Person Icon"
         />
-        <span className="text-[0.883vw] text-white ">Name:</span>
+        <p className="text-white ">Name:</p>
       </label>
       <input
-        className="w-full p-[0.5vw] bg-transparent border-[0.1vw] border-[#ffffff80] text-[#ffffff80] text-[0.65vw] rounded-[0.3vw] focus:ring-primary focus:border-primary focus:outline-none"
+        className="w-full p-[0.5vw] bg-transparent border-[0.1vw] border-[#ffffff80] text-[#ffffff80]  rounded-[0.3vw] max-[950px]:rounded-[1vw] focus:ring-primary focus:border-primary focus:outline-none flex justify-center items-center"
         type="text"
         id="name"
         name="name"

@@ -9,14 +9,14 @@ function EmailField() {
         htmlFor="email"
       >
         <Image
-          className="w-[0.781vw] h-[0.625vw]"
+          className="object-contain size-full"
           src={msg}
           alt="Message Icon"
         />
-        <span className="text-[0.883vw] text-white">Email:</span>
+        <p className="text-white">Email:</p>
       </label>
       <input
-        className="w-full p-[0.5vw] bg-transparent border-[0.1vw] border-[#ffffff80] text-[#ffffff80] text-[0.65vw] rounded-[0.3vw] focus:ring-primary focus:border-primary focus:outline-none"
+        className="w-full p-[0.5vw] bg-transparent border-[0.1vw] border-[#ffffff80] text-[#ffffff80] rounded-[0.3vw] focus:ring-primary focus:border-primary focus:outline-none"
         type="email"
         id="email"
         name="email"

@@ -2,8 +2,35 @@ import PropTypes from "prop-types";
 import RightArrow from "../../public/assets/svg/right-arrow.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useState } from "react";
 
 function ShopBtn({ linkPath }) {
+  const [matches, setMatches] = useState(false);
+
+  // Use useEffect to check media query on component mount
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 950px)"); // Define your media query here
+    // Check initial matches
+    setMatches(mediaQuery.matches);
+
+    // Add listener for media query changes
+    const handleChange = (e) => {
+      setMatches(e.matches);
+    };
+
+    // Use addEventListener instead of addListener
+    mediaQuery.addEventListener("change", handleChange);
+
+    // Clean up listener
+    return () => {
+      // RemoveEventListener instead of removeListener
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+  if (matches) {
+    
+  }
   return (
     <Link
       href={linkPath}
@@ -12,7 +39,7 @@ function ShopBtn({ linkPath }) {
       <div className="">
         <span className="bg-primary size-[1.75vw] max-[950px]:size-[3.5vw] rounded-full group-hover:scale-[13] absolute transition-all ease-linear duration-[0.3s] max-[950px]:left-[5%] left-[7%] top-[50%] translate-y-[-50%]"></span>
         <Image
-          className="size-[1.25vw] max-[950px]:size-[1.95vw] absolute left-[9.75%] max-[950px]:left-[8.75%] top-[50%] translate-y-[-50%] group-hover:translate-x-[800%] z-[1] transition-all ease-linear duration-[0.3s]"
+          className="size-[1.25vw] max-[950px]:size-[1.95vw] absolute left-[9.75%] max-[950px]:left-[8.75%] top-[50%] translate-y-[-50%] group-hover:translate-x-[1000%] z-[1] transition-all ease-linear duration-[.3s]"
           src={RightArrow}
           alt="Right Arrow"
           width={15}

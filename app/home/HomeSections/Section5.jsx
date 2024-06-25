@@ -1,12 +1,12 @@
 function Section5() {
   return (
     <section className="flex flex-col items-center justify-center  gap-[10vw]">
-      <div className="flex flex-col items-center justify-center w-[27.299vw] gap-[0.5vw]">
-        <h2>
+      <div className="flex flex-col items-center justify-center w-[27.299vw] max-[950px]:w-full gap-[0.5vw]">
+        <h1 className="text-nowrap">
           <span className="text-primary">Purified</span> Water
-        </h2>
+        </h1>
         <svg
-          className="h-[0.521vw] w-full"
+          className="h-[0.521vw] w-full max-[950px]:h-[1.25vw]"
           width="150"
           height="10"
           viewBox="0 0 150 10"
@@ -18,16 +18,16 @@ function Section5() {
             fill="#14C0C0"
           />
         </svg>
-        <p className="text-center ">
+        <p className="text-center mt-[2%]">
           Our company was founded in 2008. Water Brand bottle is great for
           drinking, cooking, activities, and even for children. The product is
           certified in 50 countries.
         </p>
       </div>
-      <div className="flex items-center justify-center gap-[3.125vw]">
+      <div className="flex items-center justify-center gap-[3.125vw] max-[950px]:gap-[8vw] flex-wrap">
         <div className="flex flex-col items-center justify-center gap-[1.823vw]">
           <svg
-            className="size-[10.417vw]"
+            className="size-[10.417vw] max-[950px]:size-[25vw]"
             width="472"
             height="472"
             viewBox="0 0 472 472"
@@ -47,11 +47,11 @@ function Section5() {
               fill="#06A2CD"
             />
           </svg>
-          <p className="text-[0.833vw]">Laboratory Control</p>
+          <p className=" text-nowrap">Laboratory Control</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-[1.823vw]">
           <svg
-            className="size-[10.417vw]"
+            className="size-[10.417vw] max-[950px]:size-[25vw]"
             width="472"
             height="472"
             viewBox="0 0 472 472"
@@ -107,11 +107,11 @@ function Section5() {
               fill="#29A9FE"
             />
           </svg>
-          <p className="text-[0.833vw]">Great Composition</p>
+          <p className=" text-nowrap">Great Composition</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-[1.823vw]">
           <svg
-            className="size-[10.417vw]"
+            className="size-[10.417vw] max-[950px]:size-[25vw]"
             width="472"
             height="472"
             viewBox="0 0 472 472"
@@ -167,11 +167,11 @@ function Section5() {
               fill="#FE53A2"
             />
           </svg>
-          <p className="text-[0.833vw] text-pretty">Nano Filtration Level</p>
+          <p className=" text-nowrap">Nano Filtration Level</p>
         </div>
         <div className="flex flex-col items-center justify-center gap-[1.823vw]">
           <svg
-            className="size-[10.417vw]"
+            className="size-[10.417vw] max-[950px]:size-[25vw]"
             width="472"
             height="472"
             viewBox="0 0 472 472"
@@ -203,7 +203,7 @@ function Section5() {
               fill="#266AFE"
             />
           </svg>
-          <p className="text-[0.833vw]">Certificates of Quality</p>
+          <p className=" text-nowrap">Certificates of Quality</p>
         </div>
       </div>
     </section>

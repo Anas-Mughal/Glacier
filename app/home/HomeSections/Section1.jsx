@@ -7,7 +7,7 @@ function Section1() {
       <h1 className="leading-[90%] text-primary text-nowrap">
         DELIVERY SERVICE
       </h1>
-      <p className="w-[70%] mt-[1vw]  first-letter:text-primary first-letter:font-bold  max-[950px]:text-center ">
+      <p className="w-[85%] max-[950px]:w-[97.5%] mt-[2.5%]  first-letter:text-primary first-letter:font-bold  max-[950px]:text-center ">
         | We now deliver different types of bottled water. To drink the best
         water please come to us and give us an order and take safe and sound
         water for you.
