@@ -32,9 +32,9 @@ function Section3() {
       <ProductsMaker
         products={products}
         ulstyles={
-          "flex items-center justify-center w-full gap-[3vw] max-[950px]:flex-col"
+          "flex items-center justify-center w-full gap-[3vw] max-[950px]:gap-[5vw] max-[950px]:flex-col items-stretch	"
         }
-        liStyles={"w-[75%]"}
+        listyles={"flex justify w-full"}
       />
       <Link
         href="/shop"

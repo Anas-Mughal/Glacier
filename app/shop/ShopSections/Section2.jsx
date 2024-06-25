@@ -54,7 +54,7 @@ function Section2() {
       <ProductsMaker
         products={filteredProducts}
         ulstyles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw] max-[950px]:gap-[4vw]"
-        listyles={""}
+        listyles={"flex justify w-full"}
       />
     </section>
   );

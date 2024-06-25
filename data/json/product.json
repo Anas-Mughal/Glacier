@@ -17,7 +17,7 @@
   },
   {
     "id":3,
-    "imgSrc": "/src/Product_assets/product.png",
+    "imgSrc": "/src/Product_assets/bottle-1.png",
     "description": "Product 3 Description",
     "price": 29.99,
     "flag": true,

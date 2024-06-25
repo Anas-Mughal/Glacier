@@ -15,7 +15,7 @@ function Product({ imgSrc, description, price, flag, tag }) {
   const saleBadgeVisibility = flag ? "hidden" : "";
   return (
     <div
-      className=" gap-[1vw] bg-[#ffffff1c] backdrop-blur-lg rounded-[0.75vw] max-[950px]:p-[3vw] p-[0.5vw] flex flex-col items-center justify-between relative"
+      className="w-full gap-[1vw] max-[950px]:gap-[3vw] bg-[#ffffff1c] backdrop-blur-lg rounded-[0.75vw] max-[950px]:rounded-[3vw] max-[950px]:p-[3vw] p-[1vw] flex flex-col items-center justify-between relative"
       data-set={tag}
       id="product"
     >
@@ -24,32 +24,32 @@ function Product({ imgSrc, description, price, flag, tag }) {
       >
         <Image src={saleSvg} alt="Sale" className="size-full" priority />
       </div>
-      <div className="w-full h-[15vw] max-[950px]:h-[37.5vw] flex justify-center items-center">
+      <div className=" h-[15vw] max-[950px]:h-[60vw]  flex justify-center items-center">
         <Image
           className="flex items-center justify-center object-contain size-full"
           src={imgSrc}
           alt=""
           width={680}
           height={680}
-          // objectFit="fit"
+          objectFit="fit"
         />
       </div>
-      <p className="h-[8vw] max-[950px]:h-[20vw] w-full max-[950px]:w-full overflow-hidden flex justify-center items-center text-balance text-center ">
+      <p className="flex items-center justify-center w-full overflow-hidden text-center text-balance max-[950px]:text-[3.75vw]">
         {description}
       </p>
       <h5>{price} RS</h5>
       <Link
         href="#0"
-        className="relative flex border-[0.0625vw] hover:border-transparent items-center justify-center overflow-hidden rounded-full group before:bg-[#25D366] before:w-full before:h-full before:absolute before:translate-y-[200%] hover:before:translate-y-0 transition-all ease-out duration-[0.3s] before:transition-all before:ease-out before:duration-[0.3s] px-[10%] py-[2.5%]"
+        className="relative flex border-[0.0625vw] hover:border-transparent items-center justify-center overflow-hidden rounded-full group before:bg-[#25D366] before:w-full before:h-full before:absolute before:translate-y-[200%] hover:before:translate-y-0 transition-all ease-out duration-[0.3s] before:transition-all before:ease-out before:duration-[0.3s] px-[17.5%] py-[2.5%]"
       >
         <span className=" flex justify-center items-center gap-[1vw]  group-hover:opacity-0 overflow-hidden transition-all ease-out duration-[0.3s]">
-          <span className="size-[2.5vw] max-[950px]:size-[3.5vw]">
+          <span className="size-[2vw] max-[950px]:size-[3.5vw]">
             <Image src={cartSvg} alt="Cart" className="size-full" />
           </span>
           <h5 className="text-nowrap">Buy Now</h5>
         </span>
         <span className=" flex justify-center items-center gap-[1vw] absolute inset-0 group-hover:opacity-100 opacity-0 transition-all ease-out duration-[0.3s]">
-          <span className="size-[2.5vw] max-[950px]:size-[3.5vw]">
+          <span className="size-[2vw] max-[950px]:size-[3.5vw]">
             <Image src={WhatsAppSvg} alt="WhatsApp" className="size-full" />
           </span>
           <h5 className="text-nowrap">WhatsApp</h5>
