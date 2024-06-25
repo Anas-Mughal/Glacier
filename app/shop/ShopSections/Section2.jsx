@@ -20,8 +20,8 @@ function Section2() {
   return (
     <section className="flex w-full gap-[1.563vw] max-[950px]:gap-[5vw] max-[950px]:flex-col items-start">
       <div className="  bg-[#ffffff1c] backdrop-blur-lg rounded-[0.5vw] max-[950px]:rounded-[2vw] p-[1.25vw] max-[950px]:p-[3.25vw] items-start flex flex-col max-[950px]:gap-[5vw] justify-center gap-[1.25vw] max-[950px]:w-full">
-        <p className=" first-letter:text-primary first-letter:font-bold max-[950px]:text-[4vw]">
-          | Categories
+        <p className="flex justify-start gap-[2.5%] items-start max-[950px]:text-[4vw] text-nowrap">
+          <span className="font-extrabold text-center text-primary max-[950px]:mt-[-0.5%] mt-[-2.5%]">|</span> Categories
         </p>
         <ul
           id="choice"
@@ -53,8 +53,14 @@ function Section2() {
       </div>
       <ProductsMaker
         products={filteredProducts}
-        ulstyles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw] max-[950px]:gap-[4vw]"
+        ulstyles="grid grid-cols-3 max-[950px]:grid-cols-2 gap-[1.563vw] max-[950px]:gap-[4vw] w-full"
         listyles={"flex justify w-full"}
+        pstyles={[
+          {
+            pSize: "",
+            imgSize: "max-[950px]:h-[30vw]",
+          },
+        ]}
       />
     </section>
   );

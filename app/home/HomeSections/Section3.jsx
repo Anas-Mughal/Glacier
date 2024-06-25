@@ -1,24 +1,9 @@
 "use client";
-// import { useEffect, useState } from "react";
 import Link from "next/link";
 import products from "../../../data/json/product.json";
 import ProductsMaker from "../../Components/ProductsMaker";
 
 function Section3() {
-  // const [displayedProducts, setDisplayedProducts] = useState(products);
-
-  // useEffect(() => {
-  //   const updateDisplayedProducts = () => {
-  //     setDisplayedProducts(
-  //       products.length === 4 && window.innerWidth >= 950
-  //         ? products.slice(0, 3)
-  //         : products
-  //     );
-  //   };
-
-  //   updateDisplayedProducts();
-  // }, []);
-
   return (
     <section className="flex flex-col items-center w-full gap-[2.5vw] max-[950px]:gap-[6.25vw]">
       <div>
@@ -31,17 +16,21 @@ function Section3() {
       </div>
       <ProductsMaker
         products={products}
-        ulstyles={
-          "flex items-center justify-center w-full gap-[3vw] max-[950px]:gap-[5vw] max-[950px]:flex-col items-stretch	"
-        }
-        listyles={"flex justify w-full"}
+        ulstyles="flex items-center justify-center w-full gap-[3vw] max-[950px]:gap-[5vw] max-[950px]:flex-col items-stretch"
+        listyles="flex justify w-full"
+        pstyles={[
+          {
+            pSize: "max-[950px]:text-[3.75vw]",
+            imgSize: "max-[950px]:h-[50vw]",
+          },
+        ]}
       />
       <Link
         href="/shop"
-        className="relative flex items-center justify-center text-white rounded-full group py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%]  hover:border-primary border-transparent border-[0.0625vw] group-hover:border-[0.0625vw]"
+        className="relative flex items-center justify-center text-white rounded-full group py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%] hover:border-primary border-transparent border-[0.0625vw] group-hover:border-[0.0625vw]"
       >
         <p className="absolute inset-0 rounded-full -z-[1] bg-gradient-to-br from-secondary to-primary group-hover:opacity-0 transition-all ease-linear duration-[0.3s] py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%]"></p>
-        <h5 className="transition-all ease-linear duration-[0.3s] group-hover:text-primary  text-nowrap">
+        <h5 className="transition-all ease-linear duration-[0.3s] group-hover:text-primary text-nowrap">
           All Products
         </h5>
       </Link>

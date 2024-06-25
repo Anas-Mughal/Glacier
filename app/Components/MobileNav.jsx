@@ -45,6 +45,7 @@ function MobileNav({ flag, setIsChecked }) {
               linkName={link.name}
               linkPath={link.path}
               onClick={handleLinkClick}
+              extrastyles={"text-[10vw]"}
             />
           ))}
         </ul>
