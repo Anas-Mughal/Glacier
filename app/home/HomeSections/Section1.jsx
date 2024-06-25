@@ -21,17 +21,17 @@ max-[950px]:justify-center gap-[1vw] mt-[1vw]"
           className="relative flex items-center justify-center text-white rounded-full group py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%]  hover:border-primary border-transparent border-[0.0625vw] group-hover:border-[0.0625vw]"
         >
           <p className="absolute inset-0 rounded-full -z-[1] bg-gradient-to-br from-secondary to-primary group-hover:opacity-0 transition-all ease-linear duration-[0.3s] py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%]"></p>
-          <h5 className="transition-all ease-linear duration-[0.3s] group-hover:text-primary  text-nowrap">
+          <h6 className="transition-all ease-linear duration-[0.3s] group-hover:text-primary  text-nowrap">
             Shop Now
-          </h5>
+          </h6>
         </Link>
         <Link
           href="/about"
           className="group   flex items-center  border-primary justify-center rounded-full bg-none border-[0.0625vw] hover:border-transparent hover:bg-primary transition-all ease-linear duration-[0.3s] py-[0.75%] px-[3.5%] max-[950px]:py-[5%] max-[950px]:px-[25%]"
         >
-          <h5 className="transition-all ease-linear duration-[0.3s] group-hover:text-white text-primary  text-nowrap">
+          <h6 className="transition-all ease-linear duration-[0.3s] group-hover:text-white text-primary  text-nowrap">
             Read More
-          </h5>
+          </h6>
         </Link>
       </div>
     </div>

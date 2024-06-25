@@ -8,9 +8,10 @@ function LinksBtn1({ linkName, linkPath, onClick }) {
       <Link
         href={linkPath}
         onClick={onClick} // Directly use the onClick handler
-        className="relative text-header-text text-white font-semibold before:w-0 before:bottom-[-20%] before:absolute before:bg-gradient-to-r from-transparent to-teal-500 before:h-[10%] hover:before:w-full before:transition-all transition-all hover:text-primary max-[950px]:text-[10vw]"
       >
-        {linkName}
+        <h6 className="relative text-white font-semibold before:w-0 before:bottom-[-20%] before:absolute before:bg-gradient-to-r from-transparent to-teal-500 before:h-[10%] hover:before:w-full before:transition-all transition-all hover:text-primary ">
+          {linkName}
+        </h6>
       </Link>
     </li>
   );
