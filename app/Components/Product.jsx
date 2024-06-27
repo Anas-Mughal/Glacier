@@ -37,7 +37,8 @@ function Product({ imgSrc, description, price, flag, tag, pstyles }) {
       <div className="flex flex-col items-center justify-center gap-[0.5vw] max-[950px]:gap-[2vw]">
         <h5>{price} RS</h5>
         <Link
-          href="#0"
+          href="https://wa.me/03195999704"
+          target="_blank"
           className="relative flex border-[0.0625vw] hover:border-transparent items-center justify-center overflow-hidden rounded-full group before:bg-[#25D366] before:w-full before:h-full before:absolute before:translate-y-[200%] hover:before:translate-y-0 transition-all ease-out duration-[0.3s] before:transition-all before:ease-out before:duration-[0.3s] px-[17.5%] py-[2.5%]"
         >
           <span className="flex justify-center items-center gap-[1vw] group-hover:opacity-0 overflow-hidden transition-all ease-out duration-[0.3s]">
