@@ -3,16 +3,18 @@ import personIcon from "../../../../public/assets/svg/personIcon.svg";
 
 function NameField() {
   return (
-    <div className="flex flex-col items-start justify-center gap-[0.5vw]">
+    <div className="flex flex-col items-start justify-center gap-[0.5vw] max-[950px]:gap-[1.5vw]">
       <label
-        className="flex items-center justify-center gap-[0.6vw]"
+        className="flex items-center justify-center gap-[0.6vw] max-[950px]:gap-[1.5vw]"
         htmlFor="name"
       >
-        <Image
-          className="object-contain size-full "
-          src={personIcon}
-          alt="Person Icon"
-        />
+        <div className="size-[2vw] max-[950px]:size-[4vw] flex justify-center items-center">
+          <Image
+            className="object-contain size-full "
+            src={personIcon}
+            alt="Person Icon"
+          />
+        </div>
         <p className="text-white ">Name:</p>
       </label>
       <input

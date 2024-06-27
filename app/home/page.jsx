@@ -9,6 +9,7 @@ import imgUrl1 from "../../public/assets/png/bottle-1.png";
 import imgUrl2 from "../../public/assets/png/p1.png";
 import Section5 from "./HomeSections/Section5";
 import Section6 from "./ContactUs/Form";
+import Section7 from "./HomeSections/Section6";
 
 export const metadata = {
   title: "Glacier | HOME",
@@ -23,7 +24,7 @@ function Home() {
         ImgPath={imgUrl1}
         component={Section1Content}
         extraProperties="max-[950px]:hidden size-[100%]"
-        />
+      />
       <div className="flex flex-col justify-center my-[12.5vw] gap-[15vw] max-[950px]:gap-[41.143vw] ">
         <Section2 />
         <Section3 />
@@ -35,6 +36,7 @@ function Home() {
         />
         <Section5></Section5>
         <Section6></Section6>
+        <Section7></Section7>
       </div>
     </Main>
   );

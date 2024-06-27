@@ -47,22 +47,23 @@ function Section6() {
       id="contact"
       className="flex flex-col items-center w-full gap-[5vw]"
     >
+      <div className="h-[5vw] max-[950px]:h-[10vw]"></div>
       <h1>
         CONTACT <span className="text-primary">US</span>
       </h1>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-end gap-[1vw] w-full"
+        className="flex flex-col items-end gap-[1vw] w-full max-[950px]:gap-[4vw]"
         name="contact"
       >
-        <div className="flex items-center justify-center gap-[1vw] h-[19.271vw] max-[950px]:flex-col max-[950px]:h-full w-full">
-          <div className="w-[34.375vw] max-[950px]:w-full h-full justify-between flex flex-col gap-[7.5%]">
+        <div className="flex items-stretch in justify-center gap-[1vw] max-[950px]:gap-[5vw] max-[950px]:flex-col min-[951px]:h-[25vw]  w-full">
+          <div className="flex flex-col justify-between size-full max-[950px]:gap-[2vw]">
             <NameField />
             <NumberField />
             <EmailField />
             <BottlesField />
           </div>
-          <div className="h-full">
+          <div className="size-full">
             <ReviewField />
           </div>
         </div>
