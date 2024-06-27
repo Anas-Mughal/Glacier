@@ -3,12 +3,12 @@ import img1 from "../../../public/assets/png/about/aboutUs.png";
 
 function Section3() {
   return (
-    <section className="flex flex-col items-center justify-between ">
+    <section className="flex items-center justify-center  flex-col gap-[2vw] ">
       <h1>
         ABOUT <span className="text-primary">US</span>
       </h1>
-      <div className="flex items-center justify-evenly  w-[100%] gap-[7vw]">
-        <div className="w-[30.208vw]">
+      <div className="flex items-center justify-evenly  w-[100%] gap-[7vw] max-[950px]:flex-col">
+        <div className="w-[30.208vw] max-[950px]:w-full max-[950px]:text-center">
           <p className=" first-letter:text-primary first-letter:font-bold">
             | Welcome to Glacier Water, where we believe that access to lean,
             pure water is a fundamental right. Our mission is to ensure every
@@ -22,7 +22,7 @@ function Section3() {
             delight for everyone.
           </p>
         </div>
-        <div className="size-[23.75vw] ">
+        <div className="size-[23.75vw] max-[950px]:size-[60vw]">
           <Image src={img1} className="size-full" alt=""></Image>
         </div>
       </div>

@@ -4,7 +4,7 @@ function AboutMap() {
       <h1>
         OUR <span className="text-primary">LOCATION</span>
       </h1>
-      <div className="rounded w-[56.25vw] h-[36.458vw]">
+      <div className="rounded w-[56.25vw] max-[950px]:w-dvw h-[36.458vw] max-[950px]:h-[75vw]">
         <iframe
           title="Glacier Finest Drinking Water Filtration Plant Location"
           className="size-full"

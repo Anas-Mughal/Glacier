@@ -3,16 +3,16 @@ import img2 from "../../../public/assets/png/about/filter.png";
 
 function Section2() {
   return (
-    <section className="flex items-center justify-center  flex-col gap-[2vw]">
-      <h1>
+    <section className="flex items-center justify-center  flex-col gap-[2vw] ">
+      <h1 className="text-nowrap">
         HOW WE <span className="text-primary">PURIFY</span>
       </h1>
-      <div className="flex items-center justify-evenly w-[100%] gap-[7vw]">
-        <div className="size-[23.75vw]">
+      <div className="flex items-center max-[950px]:flex-col-reverse justify-evenly w-full gap-[7vw]">
+        <div className="size-[23.75vw] max-[950px]:size-[60vw]">
           <Image src={img2} alt="" className="size-full"></Image>
         </div>
-        <div className="w-[30.208vw]">
-          <p className="text-right first-letter:text-primary first-letter:font-bold">
+        <div className="w-[30.208vw] max-[950px]:w-full">
+          <p className="text-right first-letter:text-primary max-[950px]:text-center first-letter:font-bold">
             | At Glacier Water, we take pride in our meticulous purification
             process to ensure you receive the cleanest and safest water
             possible. Our journey begins with sourcing high-quality water, which
