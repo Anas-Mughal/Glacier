@@ -10,9 +10,7 @@ function Section3() {
         <h1 className="max-[950px]:text-[6vw] max-[950px]:flex max-[950px]:justify-center max-[950px]:items-center max-[950px]:gap-[3vw]">
           CHOOSE YOUR <span className="text-primary">WATER</span>
         </h1>
-        <h4 className="text-[0.833vw] text-center max-[950px]:text-[2.5vw]">
-          Bottles We Deliver
-        </h4>
+        <h4 className="text-center ">Bottles We Deliver</h4>
       </div>
       <ProductsMaker
         products={products}

@@ -11,7 +11,7 @@ function Section2() {
         <div className="size-[23.75vw] max-[950px]:size-[60vw]">
           <Image src={img2} alt="" className="size-full"></Image>
         </div>
-        <div className="w-[30.208vw] max-[950px]:w-full">
+        <div className="w-[35vw] max-[950px]:w-full">
           <p className="text-right first-letter:text-primary max-[950px]:text-center first-letter:font-bold">
             | At Glacier Water, we take pride in our meticulous purification
             process to ensure you receive the cleanest and safest water

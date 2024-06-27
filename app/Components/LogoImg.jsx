@@ -7,7 +7,7 @@ function LogoImg({ linkPath }) {
   return (
     <Link
       href={linkPath}
-      className="h-full w-[7vw] max-[950px]:w-[20vw] z-[50]"
+      className="h-full w-[7vw] max-[950px]:w-[20vw] max-[950px]:ml-[10vw] z-[50]"
     >
       <Image src={Logo} alt="Logo" className="size-full" priority />
     </Link>

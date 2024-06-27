@@ -32,10 +32,10 @@ function Header() {
       id="header-container"
       className="absolute z-50 flex items-center justify-center w-full transition-all "
     >
-      <header className="flex items-center justify-evenly gap-[20vw]  w-full my-[1.5vw] ">
+      <header className="flex items-center justify-evenly max-[950px]:justify-between max-[950px]:px-[2.5vw] max-[950px]:gap-0 gap-[12.5vw]   w-full my-[1.5vw] ">
         <Hamburger></Hamburger>
         <LogoImg linkPath={links[0].path} />
-        <nav className="flex items-center justify-center  max-[950px]:hidden">
+        <nav className="flex items-center justify-center  max-[950px]:hidden ml-[7.5vw]">
           <ul className="flex items-center justify-between gap-[3vw] w-full ">
             {links.map((link) => (
               <LinksBtn1
